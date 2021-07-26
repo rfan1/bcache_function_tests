@@ -31,15 +31,19 @@ Basic function tests for bcache
       - The loop number of bcache devices detach/attach
     
     Others are in "bcache_main.bash"
-   **target_dir=/tmp/pythonmp**
-     - File download target direcotory
-   **num_thread=10**        
-     - Threading for "axel" downloading
-   **url=https://download.opensuse.org/distribution/leap/15.3/iso/openSUSE-Leap-15.3-DVD-x86_64-Current.iso**
-     - Download url
-    **md5_sum=916073802c22fad15d819f6ecf015905**
-     - Md5_sum value for downloaded file
-    **file_io_dev=/dev/bcache0**
-     - Bcache device used for muti-threading i/o tests
+   - File download target direcotory
+     **target_dir=/tmp/pythonmp**
+   
+   - Threading for "axel" downloading
+     **num_thread=10**    
+   
+   - Download url
+     **url=https://download.opensuse.org/distribution/leap/15.3/iso/openSUSE-Leap-15.3-DVD-x86_64-Current.iso**
+     
+   - Md5_sum value for downloaded file
+     **md5_sum=916073802c22fad15d819f6ecf015905**
+   
+   - Bcache device used for muti-threading i/o tests
+     **file_io_dev=/dev/bcache0**
                               
 
