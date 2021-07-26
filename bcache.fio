@@ -1,0 +1,12 @@
+[test]
+ioengine=libaio
+rw=randwrite
+iodepth=64
+bs=4k
+filename=/dev/bcache0
+direct=1
+numjobs=1
+#fdatasync=10
+write_iops_log=default
+log_avg_msec=1000
+filesize=20G
