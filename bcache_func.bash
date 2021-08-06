@@ -157,7 +157,7 @@ function flash_vol_create() {
 }
 
 function gc() {
-	log_file=logs/flash_vol_create.log
+	log_file=logs/gc.log
 	cacheuuid=`bcache-status |grep UUID|awk '{print $2}'`
 	echo 1 > /sys/fs/bcache/$cacheuuid/internal/trigger_gc
 	if [ $? -ne 0 ]; then
